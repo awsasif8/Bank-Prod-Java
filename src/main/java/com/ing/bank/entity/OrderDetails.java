@@ -21,10 +21,10 @@ public class OrderDetails {
 	private String name;
 	private int age;
 	private String email;
-	private int phone;
+	private Long phone;
 	private String address;
 	private LocalDate orderedDate;
 	private String panCard;
 	private int productId;
-	
+	private int orderGenId;
 }

@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class MailApi {
 
+	@Autowired
 	private JavaMailSender mailSender;
 
-	@Autowired
 	public MailApi(JavaMailSender mailSender) {
 		this.mailSender = mailSender;
 	}

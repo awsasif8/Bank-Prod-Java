@@ -28,35 +28,6 @@ public class ProductServiceTest {
 	@Mock
 	ProductNameRepository productRepository;
 	
-	public ProductNameDto getProductNameDto()
-	{
-		ProductNameDto productName = new ProductNameDto();
-		productName.setProductId(1);
-		productName.setProductName("Test");
-		return productName;
-	}
-	
-	public ProductNameDto getProductNameDto1()
-	{
-		ProductNameDto productName = new ProductNameDto();
-		productName.setProductId(2);
-		productName.setProductName("Test2");
-		return productName;
-	}
-	
-	public ProductNameResponeDto getProductNameResponeDto()
-	{
-		ProductNameResponeDto productDto = new ProductNameResponeDto();
-		List<ProductNameDto> getProducts = new ArrayList<ProductNameDto>();
-		getProducts.add(getProductNameDto());
-		getProducts.add(getProductNameDto1());
-		productDto.setMessage("SUCCESS");
-		productDto.setStatus("product name and id");
-		productDto.setStatusCode(200);
-		productDto.setData(getProducts);
-		return productDto;
-	}
-	
 	public Product getProduct()
 	{
 		Product product = new Product();

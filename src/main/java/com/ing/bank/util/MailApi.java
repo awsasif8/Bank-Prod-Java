@@ -25,7 +25,7 @@ public class MailApi {
 		String message1 = message2.concat(orderGenId1);
 
 		SimpleMailMessage mail = new SimpleMailMessage();
-		mail.setFrom("sai555977charan@gmail.com");
+		mail.setFrom("dhanashekara123@gmail.com");
 		mail.setTo(mailId);
 		mail.setText(message1);
 		mail.setSubject("Mail From Spring Boot");

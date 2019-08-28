@@ -37,7 +37,7 @@ public class CustomerInfoServiceImpl implements CustomerInfoService {
 
 		customerRepository.save(details);
 
-		mailApi.sendMail(details.getEmail(), details.getOrderGenId());
+		//mailApi.sendMail(details.getEmail(), details.getOrderGenId());
 String message="Your Order has been placed successfully with orderId ";
 String h=num.toString();
 String message1=message.concat(h);

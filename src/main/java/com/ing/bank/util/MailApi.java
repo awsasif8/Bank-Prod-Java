@@ -28,7 +28,7 @@ public class MailApi {
 		mail.setFrom("sai555977charan@gmail.com");
 		mail.setTo(mailId);
 		mail.setText(message1);
-		mail.setSubject("Mail From Spring Boot");
+		mail.setSubject("Your Order Details");
 
 		mailSender.send(mail);
 
